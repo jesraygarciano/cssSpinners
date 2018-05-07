@@ -24,10 +24,23 @@
     border-radius: 50%;
     border: 2px solid transparent;
     border-top-color: magenta;
+    border-bottom-color: magenta;
     width: 60px;
     height: 60px;
     margin: -30px 0;
-    animation: spinner .07s ease infinite;
+    animation: spinner 2s ease infinite;
+}
+
+.spinner-3:before{
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    
 }
 
 @keyframes spinner{
