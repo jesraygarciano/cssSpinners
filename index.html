@@ -21,8 +21,9 @@
         document.querySelector('.main').classList.add('spinner-3');
 
         setTimeout(function(){
-            
-        });
+            document.querySelector('.main p').style.display = "block";
+            document.querySelector('.main').classList.remove('spinner-3');
+        },3000);
 
     </script>
 </body>
