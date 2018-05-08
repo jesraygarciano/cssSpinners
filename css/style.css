@@ -51,3 +51,41 @@
         transform: rotate(360deg);
     }
 }
+
+
+/* Bouncing Loader */
+
+@keyframes bouncing-loader {
+    from{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to{
+        opacity: .02;
+        transform: translateY(-1rem);
+    }
+}
+
+.bouncing-loader {
+    display: flex;
+    justify-content: center;
+}
+
+.bouncing-loader > div {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: gray;
+    margin: 2rem .2rem;
+    animation: bouncing-loader 1s infinite alternate;
+}
+
+.bouncing-loader > div:nth-child(2){
+    animation-delay: .2s;
+}
+
+.bouncing-loader > div:nth-child(3){
+    animation-delay: .4s;
+}
+
+/* Bouncing Loader */
